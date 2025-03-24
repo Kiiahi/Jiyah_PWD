@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Configure Your Character</title>
+</head>
+<body>
+    <header>
+        <h1>Customize Your Character!</h1>
+    </header>
+    <main>
+        <form id="configure-form">
+            <!-- Character Race Selection -->
+            <label for="race">Choose Race:</label>
+            <select id="race" name="race">
+                <option value="" disabled selected>Select Race</option>
+                <option value="human">Human</option>
+                <option value="elf">Elf</option>
+                <option value="orc">Orc</option>
+            </select>
+            
+            <!-- Character Class Selection -->
+            <label for="class">Choose Class:</label>
+            <select id="class" name="class">
+                <option value="" disabled selected>Select Class</option>
+                <option value="warrior">Warrior</option>
+                <option value="mage">Mage</option>
+                <option value="archer">Archer</option>
+            </select>
+
+            <!-- Character Appearance -->
+            <label for="hair-color">Choose Hair Color:</label>
+            <select id="hair-color" name="hair-color">
+                <option value="" disabled selected>Select Hair Color</option>
+                <option value="black">Black</option>
+                <option value="blonde">Blonde</option>
+                <option value="red">Red</option>
+            </select>
+
+            <label for="skin-tone">Choose Skin Tone:</label>
+            <select id="skin-tone" name="skin-tone">
+                <option value="" disabled selected>Select Skin Tone</option>
+                <option value="light">Light</option>
+                <option value="medium">Medium</option>
+                <option value="dark">Dark</option>
+            </select>
+
+            <!-- Weapons Selection -->
+            <label for="weapon">Choose Weapon:</label>
+            <select id="weapon" name="weapon">
+                <option value="" disabled selected>Select Weapon</option>
+                <option value="sword">Sword</option>
+                <option value="staff">Staff</option>
+                <option value="bow">Bow</option>
+            </select>
+
+            <!-- Skills Selection -->
+            <label for="skills">Choose Special Skill:</label>
+            <select id="skills" name="skills">
+                <option value="" disabled selected>Select Skill</option>
+                <option value="fireball">Fireball</option>
+                <option value="heal">Heal</option>
+                <option value="stealth">Stealth</option>
+            </select>
+
+            <button type="submit">Preview Your Character</button>
+        </form>
+    </main>
+    <script src="configure.js"></script>
+</body>
+</html>

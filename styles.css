@@ -1,0 +1,114 @@
+/* Base styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: white; /* White text for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    color: black; /* Ensure text inside the main content is readable */
+}
+
+button {
+    background-color: #ff0000; /* Red button */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    margin: 10px;
+}
+
+#character-preview img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+#summary p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Style for navigation links as buttons */
+ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    display: flex;
+    gap: 10px; /* Add spacing between buttons */
+    justify-content: center;
+}
+
+ul li {
+    margin: 0;
+}
+
+ul li a {
+    display: inline-block;
+    background-color: #ff0000; /* Red background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Style for the image row */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    margin-bottom: 20px; /* Space below the images */
+}
+
+.image-row img {
+    width: 100px; /* Set image width */
+    height: 100px; /* Set image height */
+    border-radius: 50%; /* Make the images circular */
+    border: 2px solid white; /* Optional: Add a white border */
+    object-fit: cover; /* Ensure the images are cropped properly */
+}
